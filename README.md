@@ -15,7 +15,7 @@
  }
  ```
  + Response
- <span style="color:yellow"> 200:OK </span>
+ <span style="color:red">붉은 색</span>
  ```
 
 
