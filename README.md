@@ -2,5 +2,7 @@
 
 # api 명세와 실행방법
  ## 회원가입
- ### put - http://localhost:8080/signup
+ ```
+ put - signup
+ ```
  
