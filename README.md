@@ -3,7 +3,7 @@
 # api 명세와 실행방법
  ## - 회원가입
  ```
- put - /signup
+ put  /signup
  ```
  - Request
  ```
