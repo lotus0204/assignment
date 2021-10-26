@@ -8,7 +8,6 @@
  * Request 
      * Body Parameters
  ```
- Body Parameters
  {
  "id":"tnvjakzpt",
  "email":"tnvjakzpt@nate.com",
@@ -16,14 +15,14 @@
  }
  ```
  + Response
+     + 200:OK
  ```
- 200:OK
  {
  isSignup: true
  }
  ```
  ```
- 400:Bad Request
+     + 400: Bad Request
  {
  isSignup: false
  }
