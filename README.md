@@ -16,6 +16,7 @@
  ```
  + Response
      + 200:OK
+     + 400:Bad Request
  ```
  {
  isSignup: true
