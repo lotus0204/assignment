@@ -6,8 +6,8 @@
  put  /signup
  ```
  - Request
- - body
  ```
+ Body Parameters
  {
  "id":"tnvjakzpt",
  "email":"tnvjakzpt@nate.com",
