@@ -21,7 +21,7 @@
  isSignup: true
  }
  ```
- 
+ + 200:OK
      
  ```  
  {
