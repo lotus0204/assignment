@@ -15,7 +15,7 @@
  }
  ```
  + Response
- <span style="color:yellow"> 200:OK</span>
+ <span style="color:yellow"> 200:OK </span>
  ```
 
 
