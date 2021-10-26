@@ -3,6 +3,27 @@
 # api 명세와 실행방법
  ## 회원가입
  ```
- put - signup
+ put - /signup
+ ```
+ - Request
+ ```
+ {
+ "id":"tnvjakzpt",
+ "email":"tnvjakzpt@nate.com",
+ "password":"1234
+ }
+ ```
+ -Response
+ --200:OK
+ ```
+ {
+ isSignup: true
+ }
+ ```
+ --400:Bad Request
+ ```
+ {
+ isSignup: false
+ }
  ```
  
