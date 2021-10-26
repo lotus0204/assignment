@@ -5,8 +5,8 @@
  ```
  put  /signup
  ```
- - Request
-  - body
+ * Request
+  * body
  ```
  Body Parameters
  {
