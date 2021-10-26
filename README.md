@@ -7,20 +7,20 @@
  ```
  * Request 
      * Body Parameters
- ```
+     ```
  {
  "id":"tnvjakzpt",
  "email":"tnvjakzpt@nate.com",
  "password":"1234
  }
- ```
+     ```
  + Response
      + 200:OK
- ```
+     ```
  {
  isSignup: true
  }
- ```
+     ```
  + 200:OK
      
  ```  
