@@ -6,10 +6,36 @@
  put  /signup
  ```
  - Request
+ - body
  ```
  {
  "id":"tnvjakzpt",
  "email":"tnvjakzpt@nate.com",
+ "password":"1234
+ }
+ ```
+ + Response
+ ```
+ 200:OK
+ {
+ isSignup: true
+ }
+ ```
+ ```
+ 400:Bad Request
+ {
+ isSignup: false
+ }
+ ```
+ 
+  ## - 로그인
+ ```
+ post  /login
+ ```
+ - Request
+ ```
+ {
+ "id":"tnvjakzpt",
  "password":"1234
  }
  ```
