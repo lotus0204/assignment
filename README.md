@@ -15,8 +15,10 @@
  }
  ```
  + Response
-     + 200:OK
+ 
  ```
+ <span style="color:yellow"> 200:OK</span>
+
  {
  isSignup: true
  }
