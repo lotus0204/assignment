@@ -16,12 +16,13 @@
  ```
  + Response
      + 200:OK
-     + 400:Bad Request
- ```
+     +  ```
  {
  isSignup: true
  }
  ```
+     + 400:Bad Request
+
  + 200:OK
      
  ```  
