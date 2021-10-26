@@ -15,7 +15,7 @@
  }
  ```
  + Response
- <span style="color:red">붉은 색</span>
+ <span style="color: green"> Some green text </span>
  ```
 
 
