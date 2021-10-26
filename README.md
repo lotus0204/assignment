@@ -6,6 +6,7 @@
  put  /signup
  ```
  - Request
+  - body
  ```
  Body Parameters
  {
