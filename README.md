@@ -21,9 +21,10 @@
  isSignup: true
  }
  ```
+ 
      + 400: Bad Request
- ```
      
+ ```  
  {
  isSignup: false
  }
