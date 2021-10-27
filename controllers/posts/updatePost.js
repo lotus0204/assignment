@@ -16,8 +16,8 @@ module.exports = async (req, res) => {
       if (!findPost) res.status(404).json({ isFixed: false });
       await Post.update(
         {
-          title,
-          content,
+          title: title || findPost.title,
+          content: content || findPost.content,
           updatedAt: new Date()
         },
         {
@@ -27,7 +27,7 @@ module.exports = async (req, res) => {
           }
         }
       );
-      res.status(200).json({ isFixed: true, data: { title, content } });
+      res.status(200).json({ isFixed: true, data: { title:title||findPost.title, content: content || findPost.content } });
     }
   } catch (err) {
     console.log(err);

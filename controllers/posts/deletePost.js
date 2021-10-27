@@ -13,8 +13,10 @@ module.exports = async (req, res) => {
         }
       });
       if (!findPost) res.status(404).json({ idDel: false });
-      await Post.destroy({ where: { id: post_id, userId: userData.id } });
-      res.status(200).json({ isDel: true });
+      else {
+        await Post.destroy({ where: { id: post_id, userId: userData.id } });
+        res.status(200).json({ isDel: true });
+      }
     }
   } catch (err) {
     console.log(err);

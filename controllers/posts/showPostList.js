@@ -11,7 +11,9 @@ module.exports = async (req, res) => {
       attributes: ['userId', 'title', 'content', 'updatedAt', 'createdAt']
     });
     if (offset + 1 <= pageData.count) res.status(200).json({ data: pageData });
-    res.status(404).json({ message: 'end' });
+    else {
+      res.status(404).json({ message: 'end' });
+    }
   } catch (err) {
     console.log(err);
   }

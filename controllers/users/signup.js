@@ -1,4 +1,5 @@
 const User = require('../../User');
+const { generatePassword } = require('../../middleware/crypto');
 
 module.exports = async (req, res) => {
   const { userId, email, password } = req.body;
@@ -8,12 +9,15 @@ module.exports = async (req, res) => {
       where: { userId }
     });
     if (userInfo) res.status(400).json({ isSignup: false });
-    await User.create({
-      userId,
-      email,
-      password
-    });
-    res.status(201).json({ isSignup: true });
+    else {
+      const newPassword = generatePassword(password);
+      await User.create({
+        userId,
+        email,
+        password: newPassword
+      });
+      res.status(200).json({ isSignup: true });
+    }
   } catch (err) {
     console.log(err);
   }

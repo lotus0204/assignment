@@ -1,10 +1,12 @@
 const User = require('../../User');
 const { generateAccess, generateRefresh } = require('../../middleware/token');
+const { comparePassword } = require('../../middleware/crypto');
 
 module.exports = async (req, res) => {
   const { userId, password } = req.body;
-  const userData = await User.findOne({ where: { userId, password } });
-  if (!userData) res.status(404).json({ isLogin: false, message: 'user not found or wrong password' });
+  const userData = await User.findOne({ where: { userId } });
+  if (!userData) res.status(404).json({ isLogin: false, message: 'user not found' });
+  if (!comparePassword(password, userData.password)) res.status(400).json({ isLogin: false, message: 'wrong password' });
   const { id, email } = userData;
   const accessToken = generateAccess({ id, userId, email });
   const refreshToken = generateRefresh({ id, userId, email });
