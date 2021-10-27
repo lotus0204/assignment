@@ -1,5 +1,5 @@
 # 구현한 방법과 이유에 대한 간략한 내용
-- 사용스택
+- 주요 사용스택
     - nodejs, express, jwt, sequelize, sqlite3
 - DB 스키마
 
